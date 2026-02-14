@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    namespace = "com.flamyoad.instafetcher"
+    namespace = "com.sakanaclient.cloud"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.flamyoad.instafetcher"
+        applicationId = "com.sakanaclient.cloud"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

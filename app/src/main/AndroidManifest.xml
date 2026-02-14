@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-        android:name=".InstaFetcherApp"
+        android:name=".SakanaClientApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -25,7 +25,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InstaFetcher">
+        android:theme="@style/Theme.SakanaClient">
         <!-- Disable default WorkManager initializer since we initialize it manually with Koin -->
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -42,7 +42,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.InstaFetcher">
+            android:theme="@style/Theme.SakanaClient">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,7 +62,7 @@
             android:name=".ui.login.InstagramLoginActivity"
             android:exported="false"
             android:label="Login to Instagram"
-            android:theme="@style/Theme.InstaFetcher" />
+            android:theme="@style/Theme.SakanaClient" />
         
         <!-- Download Service for background downloads with notifications -->
         <service
